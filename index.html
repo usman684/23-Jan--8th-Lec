@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Looops in JS</h1>
+
+    <script>
+        //for Loop
+        for(let i=0; i<=100; i++){
+        console.log("Usman", i)
+
+        }
+        for(let i=0; i<=100; i+=10){
+        console.log("Usman", i)
+
+        }
+
+        //While Loop
+
+
+        let j = 1;
+        while(j<=50){
+            console.log("Usman", j)
+            j+=1;
+        }
+
+        //Do While Loop
+        let age= Number(prompt("Enter your Age"));
+        while(age<18){
+            age= Number(prompt("Enter Your age again age<18"));
+            
+        }
+
+        //Function
+        function greet(){
+            console.log("Hi! All of You")
+
+        }
+        greet()
+        greet()
+        greet()
+        greet()
+
+        //function parameter
+        function calculatePercentage(obm,tlm){
+            let percentage = (obm/tlm)*100;
+            console.log(percentage);
+            return percentage;
+        }
+
+        //function argument
+        let percentage = calculatePercentage(780,1100);
+        console.log(percentage);
+        if(percentage>60){
+            alert("You are Passes");
+        }else{
+            alert("You are Failed");
+        }
+        calculatePercentage(920,1100);
+
+
+
+
+    </script>
+</body>
+</html>
